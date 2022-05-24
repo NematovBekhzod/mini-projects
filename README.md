@@ -1,1 +1,1 @@
-# mini-projects > Kichik Javascript Loyihalar
+# mini-projects > Kichik Javascript Loyihalar.
