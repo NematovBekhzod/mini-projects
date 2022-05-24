@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("./back.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    position: relative;
+    width: 100%;
+}
+.fa-facebook, .fa-instagram, .fa-telegram, .fa-youtube {
+    position: absolute;
+    top: -20px;
+    animation: move linear forwards;
+}
+
+@keyframes move {
+    to {
+        transform: translateY(105vh);
+    }
+}
+
+.fa-telegram {
+    color: #0088cc;
+}
+.fa-instagram {
+    color: #fb3958;
+}
+.fa-facebook {
+    color: 	#4267B2;
+}
+.fa-youtube {
+    color: #FF0000;
+}
