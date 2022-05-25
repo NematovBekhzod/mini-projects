@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-image: url("/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+img {
+  width: 200px;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------------------------------ */
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+}
+.btn button{
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  margin-left: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin: 1rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+.btn-telegram button {
+  background-color: #26a2e0;
+}
+
+.btn-instagram button {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  margin-left: 0.5rem;
+}
+
+.btn-youtube button {
+  background-color: #c4302b;
+  margin-left: 0.5rem;
+  margin: 1rem 1rem;
+}
+.btn-facebook button {
+  background-color: #4267b2;
+}
+
+/* Telegram */
+
+.modal-telegram {
+  background-color: #26a2e0;
+}
+.modal-instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.modal-youtube {
+  background-color: #c4302b;
+}
+.modal-facebook {
+  background-color: #4267b2;
+}
+
+/* ------------------------------------ */
+
+.modal {
+  padding: 2rem;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.modal img {
+  width: 10rem;
+  height: 10rem;
+  background-position: center right;
+  background-size: cover;
+  border-radius: 100%;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+.modal .title {
+  margin: 0.5rem 0;
+}
+.modal .info {
+  margin: 0.5rem 0;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font-weight: 600;
+}
+.modal .view button {
+  border: none;
+  margin: 0.5rem 0;
+  background-color: #24cedb;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+.modal .view button a {
+  color: #fff;
+}
+.modal .closed {
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e62f22;
+  border-radius: 3px;
+}
+.modal .closed:hover {
+  background-color: #bd1105;
+}
+.modal .closed i {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+/* ---------------------------------------------- */
+
+@media only screen and (max-width: 600px){
+	.btns {
+    flex-wrap: wrap;
+  }
+  .modal {
+    padding: 1rem;
+    font-size: 14px;
+  }
+  .modal img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .modal .view button {
+    padding: 0.5rem 1rem;
+  }
+  .modal .closed {
+    width: 25px;
+    height: 25px;
+  }
+}
