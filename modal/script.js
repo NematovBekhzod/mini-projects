@@ -5,9 +5,14 @@ const instagram = document.querySelector(".modal-instagram")
 const youtube = document.querySelector(".modal-youtube")
 const facebook = document.querySelector(".modal-facebook")
 const closeds = document.querySelectorAll(".closed")
+const blurBackground = document.querySelector(".overlay")
+
+// ---------------------------------------------------------- //
+
 btns.forEach((btn) => {
     btn.addEventListener("click", () => {
         btnsContainer.style.display = "none"
+        blurBackground.classList.remove("hidden");
         if (btn.classList.contains("btn-telegram")) {
             telegram.style.display = "flex"
         } else {
@@ -28,12 +33,14 @@ btns.forEach((btn) => {
         } else {
             facebook.style.display = "none";
         }
-        
     })
 })
 
+// ------------------------------------------------------ //
+
 closeds.forEach((closed) => {
     closed.addEventListener("click", () => {
+        blurBackground.classList.add("hidden");
         btnsContainer.style.display = "flex"
         closed.parentElement.style.display = "none"
     })
