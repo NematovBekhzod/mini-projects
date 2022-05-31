@@ -29,8 +29,8 @@ body {
 }
 .hour, .minute, .sekund, .convention {
     margin: 0 1rem;
-    width: 12rem;
-    padding: 0 1rem;
+    width: 11rem;
+    /* padding: 0 1rem; */
 }
 
 /* ------------------------------------------------------------------------------------- */
