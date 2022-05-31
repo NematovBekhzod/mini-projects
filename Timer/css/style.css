@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.wrapper {
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  background-color: red;
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+.wrapper h1 {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.btns-start {
+  text-align: center;
+}
+.btns-start button {
+  border: none;
+  padding: 1rem 2rem;
+  margin: 1rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+.btns-start button:hover {
+  background-color: rgb(223, 219, 219);
+}
+.btns-start button.active {
+  background-color: blue;
+  color: #fff;
+}
+.wrapper .start-timer {
+  border: none;
+  padding: 1rem 2rem;
+  margin: 1rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: green;
+  color: #fff;
+}
+
+/* --------------------------------------- */
+
+.container {
+    position: absolute;
+    z-index: 1;
+    background-color: red;
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    color: #fff;
+    align-items: center;
+    display: none;
+}
+.progress-container {
+    width: 80%;
+    height: 3rem;
+    background-color: black;
+}
+.progress {
+    width: 80%;
+    height: 3rem;
+    background-color: #fff;
+}
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timer span {
+    font-size: 4rem;
+    margin: 0 1rem;
+}
+.container .exit {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.btns button{
+    border: none;
+  padding: 1rem 2rem;
+  margin: 1rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center; 
+}
+.btns button:nth-child(1) {
+    background-color:green;
+    color: #fff;
+}
+.btns button:nth-child(2) {
+    background-color:rgb(175, 10, 43);
+    color: #fff;
+}
+.btns button:nth-child(3) {
+    background-color:blue;
+    color: #fff;
+}

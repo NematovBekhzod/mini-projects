@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Timer</title>
+</head>
+<body>
+    <div class="wrapper">
+            <h1>creative timer</h1>
+            <div class="btns-start">
+                <button class="btn active" hour = "00" minute = "01" second = "00">1 Minute</button>
+                <button class="btn five" hour = "00" minute = "05" second = "00">5 Minute</button>
+                <button class="btn ten" hour = "00" minute = "10" second = "00">10 Minute</button> <br>
+                <button class="btn createTime"> + Boshqa Vaqt</button>
+            </div>
+            <button class="start-timer">Start</button>
+    </div>
+
+    <!-- ------------------------------------------------- -->
+    
+    <div class="container">
+        <div class="progress-container">
+            <div class="progress"></div>
+        </div>
+        <h1 class="timer" id="timer"><span class="minute">00</span>:<span class="second">00</span></h1>
+        <div class="btns">
+            <button class="start" id="start">Start</button>
+            <button class="pausa" id="pausa">Pausa</button>
+            <button class="reset" id="reset">Reset</button>
+        </div>
+        <button class="exit" id="exit"><i class="fa-solid fa-arrow-left"></i></button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
