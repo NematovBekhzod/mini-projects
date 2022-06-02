@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Paper game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <header>
+                <h1>Paper Game</h1>
+            </header>
+            <div class="title">
+                <h2>User Points: <span id="user-pointer" class="user-pointer">0</span></h2>
+                <h2>friendship Points: <span id="friendship-pointer" class="friendship-pointer">0</span></h2>
+                <h2>Computer Points: <span id="comp-pointer" class="comp-pointer">0</span></h2>
+            </div>
+            <main>
+                <div class="user" id="user"></div>
+                <div class="comp" id="comp"></div>
+            </main>
+            <div class="btns" id="btns">
+                <i class="fa-solid fa-hand-scissors"></i>
+                <i class="fa-solid fa-hand"></i>
+                <i class="fa-solid fa-hand-back-fist"></i>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
